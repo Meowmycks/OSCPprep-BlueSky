@@ -253,6 +253,61 @@ In the home directory of ```minhtuan```, there was a hidden folder labeled ```.m
 
 After some directory searching, two files labeled ```key4.db``` and ```logins.json``` were discovered.
 
+```
+minhtuan@ubuntu:~/.mozilla/firefox$ cd fvbljmev.default-release/
+cd fvbljmev.default-release/
+minhtuan@ubuntu:~/.mozilla/firefox/fvbljmev.default-release$ ll -a
+ll -a
+total 11756
+drwx------ 12 minhtuan minhtuan    4096 Dec  6  2020 ./
+drwx------  6 minhtuan minhtuan    4096 Dec  6  2020 ../
+-rw-------  1 minhtuan minhtuan      24 Dec  6  2020 addons.json
+-rw-------  1 minhtuan minhtuan    2361 Dec  6  2020 addonStartup.json.lz4
+-rw-rw-r--  1 minhtuan minhtuan       0 Dec  6  2020 AlternateServices.txt
+drwx------  2 minhtuan minhtuan    4096 Dec  6  2020 bookmarkbackups/
+-rw-------  1 minhtuan minhtuan     216 Dec  6  2020 broadcast-listeners.json
+-rw-------  1 minhtuan minhtuan  229376 Dec  6  2020 cert9.db
+-rw-rw-r--  1 minhtuan minhtuan       0 Dec  6  2020 ClientAuthRememberList.txt
+-rw-------  1 minhtuan minhtuan     160 Dec  6  2020 compatibility.ini
+-rw-------  1 minhtuan minhtuan     939 Dec  6  2020 containers.json
+-rw-r--r--  1 minhtuan minhtuan  229376 Dec  6  2020 content-prefs.sqlite
+-rw-r--r--  1 minhtuan minhtuan  524288 Dec  6  2020 cookies.sqlite
+drwx------  3 minhtuan minhtuan    4096 Dec  6  2020 crashes/
+drwx------  3 minhtuan minhtuan    4096 Dec  6  2020 datareporting/
+-rw-------  1 minhtuan minhtuan     926 Dec  6  2020 extension-preferences.json
+drwx------  2 minhtuan minhtuan    4096 Dec  6  2020 extensions/
+-rw-------  1 minhtuan minhtuan   34675 Dec  6  2020 extensions.json
+-rw-r--r--  1 minhtuan minhtuan 5242880 Dec  6  2020 favicons.sqlite
+-rw-r--r--  1 minhtuan minhtuan  262144 Dec  6  2020 formhistory.sqlite
+drwxr-xr-x  3 minhtuan minhtuan    4096 Dec  6  2020 gmp-gmpopenh264/
+-rw-------  1 minhtuan minhtuan     683 Dec  6  2020 handlers.json
+-rw-------  1 minhtuan minhtuan  294912 Dec  6  2020 key4.db
+lrwxrwxrwx  1 minhtuan minhtuan      15 Dec  6  2020 lock -> 127.0.1.1:+1058
+-rw-------  1 minhtuan minhtuan     660 Dec  6  2020 logins.json
+drwx------  2 minhtuan minhtuan    4096 Dec  6  2020 minidumps/
+-rw-rw-r--  1 minhtuan minhtuan       0 Dec  6  2020 .parentlock
+-rw-r--r--  1 minhtuan minhtuan   98304 Dec  6  2020 permissions.sqlite
+-rw-------  1 minhtuan minhtuan     480 Dec  6  2020 pkcs11.txt
+-rw-r--r--  1 minhtuan minhtuan 5242880 Dec  6  2020 places.sqlite
+-rw-------  1 minhtuan minhtuan    9276 Dec  6  2020 prefs.js
+-rw-r--r--  1 minhtuan minhtuan   65536 Dec  6  2020 protections.sqlite
+drwx------  2 minhtuan minhtuan    4096 Dec  6  2020 saved-telemetry-pings/
+-rw-------  1 minhtuan minhtuan     326 Dec  6  2020 search.json.mozlz4
+-rw-rw-r--  1 minhtuan minhtuan       0 Dec  6  2020 SecurityPreloadState.txt
+drwxrwxr-x  2 minhtuan minhtuan    4096 Dec  6  2020 security_state/
+-rw-rw-r--  1 minhtuan minhtuan     149 Dec  6  2020 serviceworker.txt
+-rw-------  1 minhtuan minhtuan     288 Dec  6  2020 sessionCheckpoints.json
+drwx------  2 minhtuan minhtuan    4096 Dec  6  2020 sessionstore-backups/
+-rw-------  1 minhtuan minhtuan    5766 Dec  6  2020 sessionstore.jsonlz4
+-rw-------  1 minhtuan minhtuan      18 Dec  6  2020 shield-preference-experiments.json
+-rw-rw-r--  1 minhtuan minhtuan     852 Dec  6  2020 SiteSecurityServiceState.txt
+drwxr-xr-x  5 minhtuan minhtuan    4096 Dec  6  2020 storage/
+-rw-r--r--  1 minhtuan minhtuan    4096 Dec  6  2020 storage.sqlite
+-rw-------  1 minhtuan minhtuan      50 Dec  6  2020 times.json
+-rw-r--r--  1 minhtuan minhtuan   98304 Dec  6  2020 webappsstore.sqlite
+-rw-------  1 minhtuan minhtuan     218 Dec  6  2020 xulstore.json
+```
+
 These two files are used by Mozilla to store saved login credentials.
 
 The credentials were decrypted and recovered using [this tool](https://github.com/lclevy/firepwd).
