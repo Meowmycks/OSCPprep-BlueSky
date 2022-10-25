@@ -1,4 +1,4 @@
-# OSCP Prep - *BlueSky*
+# OSCP Prep - *SunCSR: BlueSky*
 
 ## Objective
 
